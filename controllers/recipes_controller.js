@@ -14,7 +14,10 @@ recipes.get('/', (req, res) => {
 
 // Show routes(shows individual recipe)
 recipes.get('/:arryIndex', (req, res) => {
-res.send(Recipe[req.params.arryIndex]);
+res.render('Show', {
+  title: 'Recipe Details',
+  recipe: Recipe[req.params.arryIndex]  // get the recipe from the array by the index provided in the url parameter
+})
 });
 
 // Export routes
