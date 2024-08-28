@@ -5,7 +5,7 @@ const Recipe = require('../models/recipe.js')
 // Index routes
 recipes.get('/', (req, res) => {
   res.render('Index', {
-    title: 'International Guide to Cooking',
+    title: 'Index Page',
     recipes: Recipe
   }
 )

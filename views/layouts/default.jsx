@@ -4,7 +4,7 @@ function Default(html) {
   return (
     <html>
       <head>
-        <title>International Guide to Cooking</title>
+        <title> {html.title || 'Default'}</title>
       </head>
       <body>
         <h1>Welcome to the Party!</h1>
