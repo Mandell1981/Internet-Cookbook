@@ -4,7 +4,12 @@ const Recipe = require('../models/recipe.js')
 
 // Index routes
 recipes.get('/', (req, res) => {
-  res.send(Recipe);
+  res.render('Index', {
+    title: 'International Guide to Cooking',
+    recipes: Recipe
+  }
+)
+  // res.send(Recipe)
 });
 
 // Show routes(shows individual recipe)
