@@ -16,6 +16,12 @@ function Index ({recipes, title}) {
           
         ))}
       </ul>
+      <div className="newButton">
+        <h3>Think You can Cook...?</h3> 
+        <p>Click the "Add Recipe" button to include your Favorite recipe.</p>
+  <a href="/recipes/new"><button>Add Recipe!</button></a>
+</div>
+
       </Default>
     )
 }
