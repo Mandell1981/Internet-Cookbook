@@ -2,7 +2,7 @@ const React = require('react')
 const Default = require('./layouts/default')
 
 
-function Show ({recipe}) {
+function Show ({recipe, index}) {
     console.log(recipe.name)
     return (
       <Default title={recipe.name}>
@@ -11,6 +11,9 @@ function Show ({recipe}) {
         <img src={recipe.image} alt={recipe.name}/>
         <li><a href="/recipes">Go home</a></li>
         <p>{recipe.description}</p>
+        <form action={`/recipes/${index}?_method=DELETE`} method="POST">
+            <input type='submit' value="Delete" />
+        </form>
       </Default>
     )  
 }

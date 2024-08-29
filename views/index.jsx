@@ -4,7 +4,7 @@ const Default = require('./layouts/Default')
 function Index ({recipes, title}) {
     return (
       <Default title={title}>
-        <h2>Index Page</h2>
+        <h2>Recipe Page</h2>
     {/*<p>We have the best {recipes[0].name} recipe!</p>*/}
       <ul>
         {recipes.map((recipe, index) => (
