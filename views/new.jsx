@@ -21,8 +21,9 @@ function AddRecipe() {
           />
           <textarea
             name="description"
-            placeholder="Recipe Description"
-          ></textarea>
+            placeholder="Recipe Description">
+          </textarea>
+    
           <button type="submit">Add Recipe</button>
         </form>
         <div className="backButton">
